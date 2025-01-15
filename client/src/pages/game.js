@@ -58,7 +58,7 @@ socket.on("update", (move) => {
     if (tile) {
         tile.classList.add(piece); // Add the correct piece class to the tile
     }
-    document.getElementById("whosTurn").innerText = "Your Turn";
+    // document.getElementById("whosTurn").innerText = "Your Turn";
 
     //update tile placement height for column
     board[r][move.col] = move.player;
@@ -100,12 +100,12 @@ export function setPiece() {
     if (currP == pRed) {
         tile.classList.add("red-piece");
         currP = pYellow;
-        document.getElementById("whosTurn").innerText = "Yellow's Turn";
+        // document.getElementById("whosTurn").innerText = "Yellow's Turn";
     }
     else {
         tile.classList.add("yellow-piece");
         currP = pRed;
-        document.getElementById("whosTurn").innerText = "Red's Turn";
+        // document.getElementById("whosTurn").innerText = "Red's Turn";
     }
 
     //update tile placement height for column

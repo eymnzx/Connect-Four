@@ -36,18 +36,20 @@ function Home() {
 
   return (
     <>
-      <div>
-        <img src={logo} className="logo" alt="Logo" />
+      <div className='bigCard'>
+        <div>
+          <img src={logo} className="logo" alt="Logo" />
+        </div>
+        <h1>Connect Four</h1>
+        <img id="loading" src={loading} className={`loading ${isLoading ? '' : 'hidden'}`} alt="loading" />
+        <div className='card'>
+          <p>
+            Enter your username below:
+          </p>
+          <input type="text" placeholder="Name" id="name" />
+        </div>
+        <button id="find" onClick={handleButtonClick}>Search for game</button>
       </div>
-      <h1>Connect Four</h1>
-      <img id="loading" src={loading} className={`loading ${isLoading ? '' : 'hidden'}`} alt="loading" />
-      <div className='card'>
-        <p>
-          Enter your username below:
-        </p>
-        <input type="text" placeholder="Name" id="name" />
-      </div>
-      <button id="find" onClick={handleButtonClick}>Search for game</button>
     </>
   )
 }

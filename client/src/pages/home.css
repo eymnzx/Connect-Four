@@ -1,6 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
+  /* margin-left: 20%; */
   padding: 2rem;
   text-align: center;
 }
@@ -9,10 +10,13 @@
   height: 8em;
   will-change: filter;
   transition: filter 300ms;
+  filter: drop-shadow(0 2px 15px #AC89FF)
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #64f2ffaa);
+  filter: drop-shadow(0 0 2em #8B5DFF)
+  drop-shadow(0 0 1.5em #FFE8FF)
+  drop-shadow(0 0 1em #C0A6FC);
 }
 
 .card {
@@ -46,7 +50,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #FFF7D1;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -74,6 +78,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-shadow: 0 2px 10px #AC89FF;
 }
 
 button {
@@ -106,4 +111,13 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.bigCard {
+  background-color: #6A42C2;
+  padding: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 50px #563A9C;
 }

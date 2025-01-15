@@ -34,7 +34,7 @@ const Game = () => {
                 </div>
                 <div>
                 <p id="valueCont">You are playing as <span id="value"></span> </p>
-                <p id="whosTurn">Red's Turn</p>
+                {/* <p id="whosTurn">Red's Turn</p> */}
                 <p id="board"></p>
                 </div>
                     <p id="oppUserCont" className="col">Opponent: <span id="oppUser"></span> </p>
